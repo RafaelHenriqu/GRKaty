@@ -1,0 +1,12 @@
+{
+  "name": "universal-code",
+  "version": "0.0.5",
+  "description": "Simplifying Mathematics with few commands",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["mathematics","matemática","Simplifying","Simplificando","Numbers","Binary"],
+  "author": "Sr_XGRF",
+  "license": "ISC"
+}
