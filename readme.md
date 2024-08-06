@@ -40,6 +40,7 @@ Portanto, se você busca uma ferramenta que torne o desenvolvimento mais intuiti
 
 ## Inglês 🌐
 
+<br>
 
 # Universal code
 

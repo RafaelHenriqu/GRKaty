@@ -1,3 +1,7 @@
+const Language = require("../json/Language/en-us.json")
+
+
+
 function Division(N1=1,N2=1,N3=1,N4=1,N5=1,N6=1,N7=1,N8=1,N9=1,N10=1){
     return  N1 / N2 / N3 / N4 / N5 / N6 / N7 / N8 / N9 / N10
 }
@@ -15,13 +19,16 @@ function Subtraction(N1=0,N2=0,N3=0,N4=0,N5=0,N6=0,N7=0,N8=0,N9=0,N10=0){
 }
 
 function Percentage(Number1,Number2){
+    if (typeof(Number1) != 'number' || typeof(Number1) != 'number'){return Language.Invalid_Value}
     return (Number1 / 100) * Number2
 }
+
 function Pi(){
     return Math.PI
 }
 
 function Factorial(Number){
+    if (typeof(Number) != 'number'){return Language.Invalid_Value}
     let n = Number
     for (Number;Number>1;Number--){ 
         n = n * (Number-1)
@@ -30,6 +37,7 @@ function Factorial(Number){
 }
 
 function Fibonacci(limit){
+    if (typeof(limit) != 'number'){return Language.Invalid_Value}
     let Fibonacci_table=[1,1]
     while (true){
         if (Fibonacci_table[1] >= limit){ 
@@ -63,6 +71,7 @@ if (reverse){
 }
 
 function RandomNumber(Max){
+    if (typeof(Max) != 'number'){return Language.Invalid_Value}
     return Math.floor(Math.random() * Max)
 }
 
@@ -70,11 +79,13 @@ function RandomNumber(Max){
 
 // Update 1.0.0
 
-function IMC(Weight=0,Height=0){
+function IMC(Weight=1,Height=1){
+    if (typeof(Weight) != 'number' || typeof(Height) != 'number'){return Language.Invalid_Value}
     return Weight / (Height*Height)
 }
 
 function Arithmetic_Average(Numbers = [0,0],text_formatted=false){
+    if (typeof(Numbers) != 'object'){return Language.Invalid_Value}
     Final_Number = 0
     Numbers.forEach((Dados)=>{
         Final_Number = Final_Number + Dados
@@ -89,6 +100,7 @@ function Arithmetic_Average(Numbers = [0,0],text_formatted=false){
 }
 
 function Geometric_Mean(Numbers=[0,0],text_formatted=false){
+    if (typeof(Numbers) != 'object'){return Language.Invalid_Value}
     Number = 1
     Numbers.forEach(items=>{
         Number = Number * items
@@ -102,28 +114,19 @@ function Geometric_Mean(Numbers=[0,0],text_formatted=false){
 }
 
 function Root(Number){
-
+    if (typeof(Number) != 'number'){return Language.Invalid_Value}
     for (i=0;i<Number;i++){
         return Math.sqrt(Number)
     }
+
 }
 
 function Area(Height=0,Width=0,geometric_figures="Square"){
-    let Item = ["Rectangle","Square","Triangle"]
-    Item.forEach(e=>{
-        if (e == geometric_figures){
-            Items = true
-        }else{
-            Items = false
-        }
-    })
-    if (Items == true){
-        if (geometric_figures=="Rectangle") return Height * Width
-        if (geometric_figures=="Square") return Width * Width
-        if (geometric_figures=="Triangle") return (Height * Width) / 2
-    }else{
-        return "Sorry, but we only accept the following geometric figures. (Rectangle, Square & Triangle)"
-    }
+    if (geometric_figures=="Rectangle") return Height * Width
+    if (geometric_figures=="Square") return Width * Width
+    if (geometric_figures=="Triangle") return (Height * Width) / 2
+
+    return Language.Area_ERROR
 
 
     // if (geometric_figures=="Circle") return // Update 1.0.1
@@ -138,8 +141,6 @@ trapeze: Área = (base maior + base menor) × altura / 2
 }
 
 
-
-
 module.exports={
     Pi,
     Factorial,
@@ -151,12 +152,9 @@ module.exports={
     Binary,
     RandomNumber,
     Division,
-    // Update 1.0.0
     IMC,
     Arithmetic_Average,
     Geometric_Mean,
     Root,
     Area,
-
-
 }
