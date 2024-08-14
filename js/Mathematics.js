@@ -1,4 +1,4 @@
-const Language = require("../json/Language/en-us.json")
+const Language = require(`../json/Language/en-us.json`)
 
 
 
@@ -76,9 +76,6 @@ function RandomNumber(Max){
 }
 
 
-
-// Update 1.0.0
-
 function IMC(Weight=1,Height=1){
     if (typeof(Weight) != 'number' || typeof(Height) != 'number'){return Language.Invalid_Value}
     return Weight / (Height*Height)
@@ -140,6 +137,20 @@ trapeze: Área = (base maior + base menor) × altura / 2
 */
 }
 
+function Character_Counter(Text=""){
+    return Text.length
+}
+
+function Random_Max(){
+    var Table = []
+    var N1 = RandomNumber(Fibonacci(RandomNumber(5000000000000000000000000000000000000000000))) // 5 quatrilhões
+    Table.push(N1)
+    var N2 = RandomNumber(Fibonacci(RandomNumber(5000000000000000000000000000000000000000000))) // 5 quatrilhões
+    Table.push(N2)
+    var Result = Root(RandomNumber(Math.floor(Root(Arithmetic_Average(Table)))))
+    return Number(String(Result).replace('.',''))
+
+}
 
 module.exports={
     Pi,
@@ -157,4 +168,6 @@ module.exports={
     Geometric_Mean,
     Root,
     Area,
+    Character_Counter,
+    Random_Max
 }

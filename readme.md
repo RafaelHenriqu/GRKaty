@@ -2,7 +2,7 @@
 
 🚀 **Apresentando o universal-code!** 🚀
 
-Estou empolgado em compartilhar meu mais novo projeto: a biblioteca "universal-code", atualmente na versão 0.2.1! 
+Estou empolgado em compartilhar meu mais novo projeto: a biblioteca "universal-code", atualmente na versão 0.2.3! 
 
 Desenvolvida em Node.js, esta biblioteca foi criada para simplificar a matemática e tornar o desenvolvimento de sites mais acessível para todos. Se você está buscando criar projetos que envolvam cálculos matemáticos, mas não tem um profundo conhecimento em matemática, **a universal-code é a solução perfeita para você!**
 
@@ -46,7 +46,7 @@ Portanto, se você busca uma ferramenta que torne o desenvolvimento mais intuiti
 
 🚀 **Introducing the Universal Code!** 🚀
 
-I'm excited to share my newest project: the "universal-code" library, currently at version 0.2.1! 
+I'm excited to share my newest project: the "universal-code" library, currently at version 0.2.3! 
 
 Developed in Node.js, this library was created to simplify the math and make website development more accessible for everyone. If you are looking to create projects that involve mathematical calculations, but do not have in-depth knowledge of mathematics, **universal code is the perfect solution for you!**
 
@@ -75,4 +75,21 @@ So, if you're looking for a tool that makes development more intuitive and effec
 **Contact**\
 ``Discord: universal_code``\
 ``Skype: live:.cid.da407c674bb93c56``\
-``Celular: +55 43 9951-0624``
+``Phone: +55 43 9951-0624``
+
+---
+
+**New Version**\
+**V0.2.3**\
+\
+\
+**Mathematics**
+- Random_Max
+
+**Computer**
+
+- Time
+- Platform
+- Machine
+- Type
+- Tips
