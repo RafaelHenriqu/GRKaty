@@ -1,6 +1,6 @@
 {
   "name": "universal-code",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Simplifying Mathematics with few commands",
   "main": "index.js",
   "scripts": {

@@ -1,0 +1,5 @@
+{
+    "Area_ERROR":"抱歉，我们只接受以下几何图形。 （Rectangle, Square & Triangle）",
+    "Invalid_Value":"错误，请输入有效值",
+    "Set_Language_ERROR":"抱歉，我们目前仅接受以下语言。 \n 英语 (en-us) \n 葡萄牙语 (pt-br) \n 俄语 (ru-ru) \n 中文 (zh-cn)"
+}

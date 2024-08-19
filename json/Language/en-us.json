@@ -1,5 +1,5 @@
 {
     "Area_ERROR":"Sorry, but we only accept the following geometric figures. (Rectangle, Square & Triangle)",
-    "Invalid_Value":"Error please enter a valid value"
-
+    "Invalid_Value":"Error please enter a valid value",
+    "Set_Language_ERROR":"Sorry, but we only accept the following languages ​​currently. \n English (en-us) \n Portuguese (pt-br) \n Russo(ru-ru) \n chine(zh-cn)"
 }
