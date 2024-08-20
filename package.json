@@ -1,6 +1,6 @@
 {
   "name": "universal-code",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "Simplifying Mathematics with few commands",
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,7 @@
     "Numbers",
     "Binary"
   ],
-  "author": "universal_studio",
+  "author": "universal_code",
   "license": "ISC",
   "dependencies": {
   }

@@ -78,7 +78,24 @@ var Calculations = {
     trapeze: Área = (base maior + base menor) × altura / 2
     */
     },
+    Meters_converter:function(Number=0,Type="Pés"){
+        if (typeof(Number) != 'number') {return Configs.Settings.Language.Invalid_Value}
+        if (Type == "Feet"){return Number * 3.281}
+        if (Type == "Inch"){return Number * 39.37}
+        if (Type == "Yard") {return Number * 1.094}
+        if (Type == "Cubit") {return Number * 0.4572}
+        return Configs.Settings.Language.Meters_converter
+    },
+    Celsius_Converter:function(Number=0,Type="Fahrenheit"){
+        if (typeof(Number) != 'number') {return Configs.Settings.Language.Invalid_Value}
+        if (Type == "Fahrenheit"){return (Number * 9/5) + 32}
+        if (Type == "Kelvin"){return Number + 273.15}
+        return Configs.Settings.Language.Celsius_Converter
+    },
 
+    Module:function(Number=0,divider=0){
+        return Number % divider
+    }
 }
 
 var Infos = {
@@ -88,55 +105,45 @@ var Infos = {
 
 }
  
-var Convert = {
-    
-  Binary:function(text,reverse){
-    if (text == null){return Configs.Settings.Language.Invalid_Value}
-    const ASCII_TABLE = require("../json/Convert/Binary.json")
-    if (reverse){ 
-        let Text2 = ""
-        let tc = text.split(' ')
-        for (i=0;text.split(' ').length > i;i++){
-            if (tc[i]=='')return Text2
-            Text2 = Text2 + ASCII_TABLE[tc[i]] 
-            Text2 = Text2 + ""
-        }
-        return Text2
-    }else{
-        let Text2 = ""
-        for (i=0;text.length > i;i++){
-            Text2 = Text2 + ASCII_TABLE[text[i]]
-            Text2 = Text2 + " "
-        }
-        return Text2
-    }
-  },
 
-  Decimal:function(text,reverse){
-    if (text == null){return Configs.Settings.Language.Invalid_Value}
-    const ASCII_TABLE = require("../json/Convert/Decimal.json")
-    if (reverse){ 
-        let Text2 = ""
-        let tc = text.split(' ')
-        for (i=0;text.split(' ').length > i;i++){
-            if (tc[i]=='')return Text2
-            Text2 = Text2 + ASCII_TABLE[tc[i]] 
-            Text2 = Text2 + ""
+
+function Convert(text,reverse,Type="binary"){
+    var TypeFilter = Type.toLowerCase()
+    var Items = ["octal","decimal","binary","hexadecimal"]
+    if (Items.includes(TypeFilter)){
+        if (text == null){return Configs.Settings.Language.Invalid_Value}
+        if (TypeFilter == "octal"){ASCII_TABLE = require("../json/Convert/Octal.json")}
+        if (TypeFilter == "decimal"){ASCII_TABLE = require("../json/Convert/Decimal.json")}
+        if (TypeFilter == "binary"){ASCII_TABLE = require("../json/Convert/Binary.json")}
+        if (TypeFilter == "hexadecimal"){ASCII_TABLE = require("../json/Convert/Hexadecimal.json")}
+    
+    
+        if (reverse){ 
+            let Text2 = ""
+            let tc = text.split(' ')
+            for (i=0;text.split(' ').length > i;i++){
+                if (tc[i]=='')return Text2
+                Text2 = Text2 + ASCII_TABLE[tc[i]] 
+                Text2 = Text2 + ""
+            }
+            if (TypeFilter == "hexadecimal"){return Text2.replace(/\s+/g,'')}
+            return Text2
+        }else{
+            let Text2 = ""
+            for (i=0;text.length > i;i++){
+                Text2 = Text2 + ASCII_TABLE[text[i]]
+                Text2 = Text2 + " "
+            }
+            if (TypeFilter == "hexadecimal"){return Text2.replace(/\s+/g,'')}
+            return Text2
         }
-        return Text2
+
+
     }else{
-        let Text2 = ""
-        for (i=0;text.length > i;i++){
-            Text2 = Text2 + ASCII_TABLE[text[i]]
-            Text2 = Text2 + " "
-        }
-        return Text2
-    }    
-  },
+        return Configs.Settings.Language.Convert_ERROR
+    }
 
 }
-
-
 
 
 
