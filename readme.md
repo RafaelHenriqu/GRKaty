@@ -1,54 +1,62 @@
 # AVISO
 
 ## PROJETO DESCONTINUADO
-**Mas não se preocupem, o projeto foi passado para outra equipe administrar. O nome do projeto continuará sendo o mesmo e o projeto será transferido no npm para os novos donos.**
 
 
 
 
-# Universal-code
+# GRKaty
 
-🚀 **Apresentando o universal-code!** 🚀
+🚀 **Apresentando o GRKaty!** 🚀
 
-Estou animado em compartilhar a nova atualização da biblioteca "universal-code", agora na versão **0.2.4!**
+Estamos animados em apresentar o GRKaty, uma biblioteca inovadora para Node.js, desenvolvida para simplificar os aspectos mais complexos da programação, especialmente na área da matemática!
 
-Desenvolvida em Node.js, nossa biblioteca foi criada para simplificar a matemática e facilitar o desenvolvimento de sites, tornando-o acessível para todos. O **foco principal da universal-code é a matemática**, mas também incluímos funcionalidades extras, como a obtenção de informações do sistema do usuário, tornando-a ainda mais versátil!
+## Sobre o Projeto
 
-### Novidades na Versão 0.2.4
+O GRKaty foi criado com o objetivo de tornar a programação mais acessível, oferecendo novos recursos e melhorias significativas. Nossa missão é ajudar os desenvolvedores a transformar tarefas complexas em operações simples e eficientes.
 
-🌟 **Principal Reforma:** O código do projeto foi praticamente 100% reformulado! Agora, as funções estão organizadas dentro de objetos, facilitando o entendimento e a utilização da biblioteca.
+## Principais Funcionalidades do GRKaty
 
-🌐 **Suporte Multilíngue:** Agora temos tradução para **Chinês, Russo, Português e Inglês**, oferecendo mensagens de erro na língua configurada, caso o desenvolvedor use uma função de forma incorreta.
+🌟 **Redesign e Aprimoramento:** O GRKaty é projetado com uma estrutura de código que facilita a compreensão e o uso, proporcionando uma experiência mais fluida.
 
-🔢 **Novas Funcionalidades:** Além das operações matemáticas tradicionais, a biblioteca agora inclui:
-- Conversão de texto para decimal e vice-versa.
-- Captura do tempo do PC do usuário.
-- Acesso a dados do sistema, como plataforma, máquina e tipo.
+🔢 **Funcionalidades Aprimoradas:** O GRKaty mantém funcionalidades básicas enquanto também introduz novas opções, incluindo:
+- Acesso a operações matemáticas avançadas.
+- Conversão de unidades.
+- Mais manipulações de dados e strings.
+- E outros novos comandos que tornam a programação ainda mais intuitiva!
 
-⚙️ **Configuração de Idioma:** Você agora pode configurar o idioma da biblioteca com um simples comando de configuração. Isso significa que, se ocorrer um erro ao usar uma função, a mensagem de erro será exibida na língua que você configurou, facilitando a identificação e solução de possíveis problemas.
+🌐 **Suporte Multilíngue:** O GRKaty oferece suporte a vários idiomas, permitindo que os desenvolvedores configurem seu idioma preferido para mensagens de erro e feedback.
 
-👣 **Funções Disponíveis:** 
+## Funções Disponíveis
+
+O GRKaty oferece uma ampla gama de funções, incluindo, mas não se limitando a:
 - Pi
 - Fatorial
 - Fibonacci
-- Adição
-- Multiplicação
-- Subtração
-- Porcentagem
-- Conversão para Binário
-- Número Aleatório
-- Divisão
-- IMC (Índice de Massa Corporal)
-- Média Aritmética
-- Média Geométrica
+- Adição, Subtração, Multiplicação e Divisão
+- Percentagem
+- Conversão Binária
+- Geração de Números Aleatórios
+- Cálculo de IMC (Índice de Massa Corporal)
+- Cálculos Estatísticos: Média Aritmética, Média Geométrica
 - Raiz Quadrada
 - Cálculo de Área
+- ... e muito mais!
 
-🔍 **Observação:** Esta lista não inclui todas as funções disponíveis na biblioteca. Para conhecer o conjunto completo de funcionalidades, é necessário baixar a biblioteca e explorar as opções que oferecemos. Vale ressaltar que o README não está 100% atualizado com todas as informações!
+🔍 **Nota:** A lista acima não é exaustiva. Para descobrir todas as funcionalidades disponíveis, incentivamos você a baixar a biblioteca e explorar todas as suas opções!
 
-**Atenção:** O projeto estará em hiato por 4 meses, enquanto me concentro em outros compromissos. Qualquer nova ideia gerada durante esse tempo também será armazenada e considerada para futuras atualizações.
+## Começando
 
-Venha explorar a "universal-code"! Juntos, vamos transformar a forma como interagimos com a matemática e além! 🚀✨
+Para instalar o GRKaty, você pode usar o npm:
 
+```bash
+npm install grkaty
+```
 
+Uma vez instalado, você pode começar a utilizar suas funções em seus projetos Node.js!
 
+---
+
+**Atenção:** O GRKaty é uma biblioteca em evolução. Seu feedback e contribuições são essenciais para melhorias futuras!
+
+Junte-se a nós na jornada de simplificar a programação e explore as capacidades do GRKaty! Vamos transformar a forma como você interage com a matemática e muito mais! 🚀✨
