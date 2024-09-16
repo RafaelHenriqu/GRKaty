@@ -1,3 +1,11 @@
+# AVISO
+
+## PROJETO DESCONTINUADO
+**Mas não se preocupem, o projeto foi passado para outra equipe administrar. O nome do projeto continuará sendo o mesmo e o projeto será transferido no npm para os novos donos.**
+
+
+
+
 # Universal-code
 
 🚀 **Apresentando o universal-code!** 🚀
@@ -41,4 +49,6 @@ Desenvolvida em Node.js, nossa biblioteca foi criada para simplificar a matemát
 **Atenção:** O projeto estará em hiato por 4 meses, enquanto me concentro em outros compromissos. Qualquer nova ideia gerada durante esse tempo também será armazenada e considerada para futuras atualizações.
 
 Venha explorar a "universal-code"! Juntos, vamos transformar a forma como interagimos com a matemática e além! 🚀✨
+
+
 
